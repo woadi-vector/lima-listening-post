@@ -35,6 +35,7 @@ class RepeatableDemoTests(unittest.TestCase):
                 self.assertTrue(all(not a['receipts'] for a in items))
                 self.assertEqual(drafts.get(ws,result['draft_id'])['status'],'prepared')
                 self.assertIn('RECORDED REPLAY',drafts.get(ws,result['draft_id'])['body'])
+                for item in items:self.assertIn(item['id'],drafts.get(ws,result['draft_id'])['body'])
                 self.assertFalse(drafts.get(ws,result['draft_id'])['stale'])
                 self.assertFalse(google_connection.state(ws)['connected'])
                 self.assertFalse(notion_delivery.state(ws)['configured'])
