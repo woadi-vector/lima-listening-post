@@ -1,0 +1,9 @@
+# Subject folders and running information
+
+Today → Subject folders shows persistent logical folders inside each project. New subject names create folders automatically. Normalized exact names reuse a folder within that project, never a different project. Meta extraction receives up to 100 existing folder names with the selected source and asks for a clear subject match; ambiguous topics can create a new folder. This is proposed organization, not a claim of reliable semantic deduplication. Older accepted and pending evidence is filed by its existing subject name when the overview loads. Rejected-only folders are hidden without deleting history.
+
+Each folder derives its running overview from current accepted evidence. Pending updates, conflicting reviewed statements, and source history remain separate. New approved evidence updates the view; only an explicit reviewed supersession replaces a prior work claim. No model-generated prose is presented as verified memory. Evidence & filing lets the user move an item to an existing or new folder; filing changes neither the claim nor its review state and survives later synchronization and keep-as-reference conversion.
+
+The view displays context labels, source count, latest known capture time, latest reviewed-source capture time, and last human review time. New imports and recent reviews do not reset capture age. Unknown dates are visibly incomplete. A seven-day source age triggers a prompt to check for newer information, not a claim that the source is false or expired. Click Refresh folder overview after background processing, or review/file an item to refresh derived contents.
+
+Folder names and memberships are local. Creating a Lima folder does not create a Windows directory or publish to Notion/Google. Google, Notion and other outward actions retain their separate approvals. This version does not automatically assign subjects across different projects or silently merge similarly named topics.

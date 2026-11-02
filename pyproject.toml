@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lima-listening-post"
+version = "0.2.0"
+description = "Evidence-backed project continuity with reviewed AI interpretations"
+requires-python = ">=3.11"
+dependencies = ["tzdata; sys_platform == 'win32'"]
+
+[project.optional-dependencies]
+audio = ["faster-whisper", "numpy", "av"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lima_next"]
+
+[project.scripts]
+lima = "lima_next.__main__:main"
+lima-demo = "lima_next.demo:main"

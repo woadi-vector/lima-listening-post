@@ -1,0 +1,495 @@
+{
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "be0ebccd8377bad13582baa98f3ffbbea65fec30f52b8b891611e75c9fc29829",
+      "bytes": 179
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "b233fbbfa7b134786a0c5c762cfeaacf6cda06bf4fcb0f83127d3a859e962720",
+      "bytes": 642
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "c08d8eed495453838ae35c1075e40ae79a0215926846cee329221992077711c7",
+      "bytes": 147
+    },
+    {
+      "path": "CONTRIBUTIONS.md",
+      "sha256": "c352896824a1cda7b7d6bd606e44f3c380b3bc2a1787be09650681d748192d6f",
+      "bytes": 1641
+    },
+    {
+      "path": "Open Lima on phone.cmd",
+      "sha256": "a72e70b4303b6982c76b2050551e43cefb95957df5049f8a55f9736a36552e76",
+      "bytes": 82
+    },
+    {
+      "path": "README.md",
+      "sha256": "b2eed6e14f0809587bf1d618e1be3c710574c4f0d5af429846ef3e257dcb97c8",
+      "bytes": 6015
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "3496d2dece916312771cce52ad34331b13a9f665d60df61329dc207c2d35c25b",
+      "bytes": 1800
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "538ab5615bc9e6672dc3e28f405c8f23c0dab4e6d73e93c52a9d473ac9ffc78b",
+      "bytes": 1373
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "296b3a359713477957baa539fed93ed814f1eb2bff9e7a05c041d406f1f68099",
+      "bytes": 7094
+    },
+    {
+      "path": "docs/CHANGE_VIEW.md",
+      "sha256": "eb4fe9d706ba8630dd9ac43b80841cab8ed95ae708ee6733622813205097be79",
+      "bytes": 1789
+    },
+    {
+      "path": "docs/DEMO_RUNBOOK.md",
+      "sha256": "d366aa1c0c3a5a82e49c29ce95646a99d311f8565abdb6af808bf7bbf738fcba",
+      "bytes": 3715
+    },
+    {
+      "path": "docs/EMERGING_IDEAS.md",
+      "sha256": "d34547a10dc64b38e0630dea8a4d6c0e34a77c0269714bfb6bebcbcdbcf9be49",
+      "bytes": 1821
+    },
+    {
+      "path": "docs/GOOGLE_CONNECTION.md",
+      "sha256": "7f311d2fca765113b8766bac8389c358e03a9891aab347d927c2076308125d9d",
+      "bytes": 5523
+    },
+    {
+      "path": "docs/MUSE_OUTPUTS.md",
+      "sha256": "09c47630ea7a6ddcdfddade3a9187213c8c741cebe09ef2ca3f18d1c0a4129b4",
+      "bytes": 3336
+    },
+    {
+      "path": "docs/MUSE_RECONCILIATION.md",
+      "sha256": "f8a39adc4fc017d22b98dbffd27cf72ae18a9f753e1f34b4db7fb9b2e9bab2ad",
+      "bytes": 3720
+    },
+    {
+      "path": "docs/NOTION_DAILY_REVIEW.md",
+      "sha256": "71efacd54b57ca6e642dbe0c254cd6ea22035c6dd1ceef2c728338caa9b2e7d5",
+      "bytes": 2548
+    },
+    {
+      "path": "docs/PHONE_ACCESS.md",
+      "sha256": "50dae145fbcb44caa6cf031010faceb47245a56dd017a72905c73912c29e7ba7",
+      "bytes": 2937
+    },
+    {
+      "path": "docs/PROCESS_MY_DAY.md",
+      "sha256": "1e51da211c8cb3af45943af4cdc9d514cffc901184d2621fbe70ddbd87772e24",
+      "bytes": 5189
+    },
+    {
+      "path": "docs/REVIEW_ORGANIZATION.md",
+      "sha256": "b963911e499402027b5088f12799d2f0dd1c7b258a2483706702410180465124",
+      "bytes": 1650
+    },
+    {
+      "path": "docs/SUBJECT_FOLDERS.md",
+      "sha256": "37db7f02c4d524bfe3a4111f0130ac42026ab3d34d927990c6d9ac1029732f87",
+      "bytes": 1979
+    },
+    {
+      "path": "docs/TUESDAY_FIELD_TEST.md",
+      "sha256": "5044e87ae248f7e7191e8e6d9959e5641e87503772156ace19d6486b8dba47ec",
+      "bytes": 3404
+    },
+    {
+      "path": "lima_next/__init__.py",
+      "sha256": "9e786ee669c50f5511fa6044d59d871044b72b75e5d76b61a95f536c457106f9",
+      "bytes": 84
+    },
+    {
+      "path": "lima_next/__main__.py",
+      "sha256": "c5b9b07cc9b8d2142b96fd0ccb6fc57a114bc09cd139599f622b67c9830054f5",
+      "bytes": 2521
+    },
+    {
+      "path": "lima_next/analysis_jobs.py",
+      "sha256": "4fd8ef16064ec81d58eddf06f504135bce1c669faf58cc5fe3874c7097f8c288",
+      "bytes": 6988
+    },
+    {
+      "path": "lima_next/attribution.py",
+      "sha256": "fd3ffde91ad6c1f0fcf5654910c8774080ea00b1884e73de8d2956295ece3e52",
+      "bytes": 1151
+    },
+    {
+      "path": "lima_next/bee_delivery.py",
+      "sha256": "5f2d98529e7d56159def878933c010814442ea432bf5ad7497ec48238a38a92c",
+      "bytes": 18577
+    },
+    {
+      "path": "lima_next/briefing.py",
+      "sha256": "6e6a230b5f9ae5cab0af969396d5d76fb03a47d67c2906af46fe248a4a1696a4",
+      "bytes": 5357
+    },
+    {
+      "path": "lima_next/changes.py",
+      "sha256": "0a9fb8709d681766b7fcf5e03a3b35c294a9009250be53761f6884e754d1b031",
+      "bytes": 1264
+    },
+    {
+      "path": "lima_next/contact_delivery.py",
+      "sha256": "479ee54d42082781177e3cd3f8cafd5ac13b37f87b93436effb95dec7982f546",
+      "bytes": 3232
+    },
+    {
+      "path": "lima_next/context_suggestions.py",
+      "sha256": "567c470ff1c30b6cb479c0a957d2cab5e0b8f945c34614847058274d4877933e",
+      "bytes": 6978
+    },
+    {
+      "path": "lima_next/daily_artifacts.py",
+      "sha256": "cd8a4855977fea418781334a63096b66b8e0c237a588bc52cf2677a737a3d3b8",
+      "bytes": 9291
+    },
+    {
+      "path": "lima_next/demo.py",
+      "sha256": "c2f16722aced054763eceddac01284fac06672be12bdd307fa43496c2d32453d",
+      "bytes": 13161
+    },
+    {
+      "path": "lima_next/demo_assets/muse_showcase.json",
+      "sha256": "4ee47ff4cafe1ab7d24776bf0547bfc6ac6deb2e5871b988e65cc35ddf4b270d",
+      "bytes": 5778
+    },
+    {
+      "path": "lima_next/drafts.py",
+      "sha256": "74354fd9347a1f748fba0fb6ba035557afdbe55d2aac154fe0ff737d34bac425",
+      "bytes": 11271
+    },
+    {
+      "path": "lima_next/evidence_quality.py",
+      "sha256": "88f1b1627f3366657422974bc5fcb7fc9a08e69f6e5c5c3ff4ffc0917ac4f1ad",
+      "bytes": 1233
+    },
+    {
+      "path": "lima_next/google_connection.py",
+      "sha256": "b546a1727794506f4c653e25840f075eb09c34c4f84b7976f8e7ae2fcd70abd2",
+      "bytes": 12311
+    },
+    {
+      "path": "lima_next/ideas.py",
+      "sha256": "65e89fe0777f24c8a148f84612a21fa4c407abb4ef10ef68401c7ce3eee7efea",
+      "bytes": 6579
+    },
+    {
+      "path": "lima_next/interpret.py",
+      "sha256": "4f3d1d701ac595ee00679f9dba19bce559f65b745e5bca4e513a1a0861de2dd9",
+      "bytes": 16987
+    },
+    {
+      "path": "lima_next/memory_search.py",
+      "sha256": "cbdc1005fe2395c508867d6e626a2bc7ce9bdde26ad59ad4c02d66640a182a60",
+      "bytes": 4131
+    },
+    {
+      "path": "lima_next/meta_provider.py",
+      "sha256": "c4b4900927a24dbc3c56ab834723c15dc4783e77e662d4141afb5fd2278f8ca9",
+      "bytes": 4541
+    },
+    {
+      "path": "lima_next/muse_reconciliation.py",
+      "sha256": "84817f2259beaf3fe85e10a092c838fbcf61616dc2f80b53cf8cf3b95359b37a",
+      "bytes": 11813
+    },
+    {
+      "path": "lima_next/nightly.py",
+      "sha256": "cf626b333ff2ad6803b987708f5c5bcb06d2fa89d1e7ee7e1c2529c2f7faa0fa",
+      "bytes": 6049
+    },
+    {
+      "path": "lima_next/notion_delivery.py",
+      "sha256": "f7d9e56157672415cc24d7bd6cf8136812dd6ec11427c300ecf5f89b85d76ac0",
+      "bytes": 15323
+    },
+    {
+      "path": "lima_next/outgoing_actions.py",
+      "sha256": "e0cf8f7e06411f00bac01fb105991bcfc8330fbaf03c84efe95b1fe2ab1c15e5",
+      "bytes": 23702
+    },
+    {
+      "path": "lima_next/phone.py",
+      "sha256": "fd7caf0e83019930ab370c2a1b3581fff9a312fea76833037deb25b6ba22bc0d",
+      "bytes": 4987
+    },
+    {
+      "path": "lima_next/process_day.py",
+      "sha256": "4e63bcd482f33f6a3bf6f4fcfded7120d8efb1fdcd11559b91399890b9eaa775",
+      "bytes": 24392
+    },
+    {
+      "path": "lima_next/recordings.py",
+      "sha256": "f2b8beb7e57d714e440477bc09c524951a6b96ecd3194f951449645dad3b2743",
+      "bytes": 9499
+    },
+    {
+      "path": "lima_next/review_organization.py",
+      "sha256": "8962a9b6950a2275ee913d93cfe5ddf0345d1ed612c97ceae34ad47257fff608",
+      "bytes": 5247
+    },
+    {
+      "path": "lima_next/server.py",
+      "sha256": "97106be7222334f46b35d8b13fb90966a88efae7cd5c8c62f865187b3ae806cd",
+      "bytes": 25949
+    },
+    {
+      "path": "lima_next/store.py",
+      "sha256": "b24dd90b25950b6b4696a85249fca6035a0553c53273633cb6716fb7dcb342b4",
+      "bytes": 10153
+    },
+    {
+      "path": "lima_next/subject_folders.py",
+      "sha256": "375067bbef6e6325076b3b05d1ba3e44fd53abdd4c15831d291905457e0e1b9c",
+      "bytes": 5785
+    },
+    {
+      "path": "lima_next/transcription_jobs.py",
+      "sha256": "24755c1e9dfa2d60d67926fa92f022b91cc437b8b05d616b52f65635e85232ec",
+      "bytes": 10905
+    },
+    {
+      "path": "lima_next/web/app.js",
+      "sha256": "32b12ab804c377ddcbc9fbe7d6b5fcf9abf813204aeadc80b952861be59551b9",
+      "bytes": 74213
+    },
+    {
+      "path": "lima_next/web/communications.js",
+      "sha256": "d8244fff40ed540eea4aefdb56ade78934dc9859858624dd37a9841eb1f89724",
+      "bytes": 5556
+    },
+    {
+      "path": "lima_next/web/day.js",
+      "sha256": "90bfa70b29958e28332a1d05e143444e0839db99f6e6f5a78bb4ea0274e9422a",
+      "bytes": 29396
+    },
+    {
+      "path": "lima_next/web/file-import.js",
+      "sha256": "ccf808acb39088a2393848d55b5a1936913d2ee82a21f198f684b2b46f40700b",
+      "bytes": 1443
+    },
+    {
+      "path": "lima_next/web/index.html",
+      "sha256": "e2b678a5d69b113544e4c4810de896a749c7adf0ca6ae294197e62b1e5b1db2a",
+      "bytes": 20193
+    },
+    {
+      "path": "lima_next/web/style.css",
+      "sha256": "899b276a74537379241ef8c79b99456c7a6c6372a7f9efc46a917950f1b0208a",
+      "bytes": 15860
+    },
+    {
+      "path": "lima_next/web/subjects.js",
+      "sha256": "00effad353b0376da8d2987bbcd694c1e2d45ac509d7b14ef0cdb47d47f92937",
+      "bytes": 6261
+    },
+    {
+      "path": "lima_next/workspace.py",
+      "sha256": "901c93d8e20ba2db5d35bfa829a8e323acc97fb5c584b073572332846ea24643",
+      "bytes": 33829
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "ca9e854487544906105d52c1ac71249c86f18a5ef48ffa0dd47b3b1cca71fe30",
+      "bytes": 514
+    },
+    {
+      "path": "tests_next/test_analysis_jobs.py",
+      "sha256": "6a8623fb400b15b6c762cf3183aa020aa83153d0e0188b07ee5ef7b5bf81223c",
+      "bytes": 3944
+    },
+    {
+      "path": "tests_next/test_attribution.py",
+      "sha256": "5348d7bbd8c70816c5ec0f259b7102fc34ed5985538ddb3ed8c497cd0a61863f",
+      "bytes": 3492
+    },
+    {
+      "path": "tests_next/test_bee_delivery.py",
+      "sha256": "bd6a39532fd270d4fe0a91b54039b23bc200eb02213046f6306dc2e9bcac33ed",
+      "bytes": 8809
+    },
+    {
+      "path": "tests_next/test_briefing.py",
+      "sha256": "8c5862e744076a31c637c1314b8d7f66e138be3a5ab3125bf320d5a5e0a94c06",
+      "bytes": 3955
+    },
+    {
+      "path": "tests_next/test_changes.py",
+      "sha256": "306d9a217a5e2e97315be1b35ce01dc3ea929515c0afd54f0ad32b03e97111b7",
+      "bytes": 2759
+    },
+    {
+      "path": "tests_next/test_context_suggestions.py",
+      "sha256": "c31ec20fad24e25eab75ee892ff3efdaff168d91cfd8059c10ee4aebc199407a",
+      "bytes": 6273
+    },
+    {
+      "path": "tests_next/test_demo_loop.py",
+      "sha256": "1df21b9ebbc2f071c9911413f8d493f6b026cf4a419853a0c7c5534fb5782845",
+      "bytes": 3596
+    },
+    {
+      "path": "tests_next/test_document_analysis.py",
+      "sha256": "10445e3bc2b2e2b84ad611842999bf2f79000fac1ad07f25967a518c1f89022d",
+      "bytes": 4293
+    },
+    {
+      "path": "tests_next/test_drafts.py",
+      "sha256": "af44618d12558e05f6dde39e62864a836df85f7939d85baf09cfb90e05a48410",
+      "bytes": 6772
+    },
+    {
+      "path": "tests_next/test_evidence_quality.py",
+      "sha256": "a55cb6aab3d67c6656eee20c1634a4ab9c43493d2df58e4971725f1d25333cdb",
+      "bytes": 4078
+    },
+    {
+      "path": "tests_next/test_google_connection.py",
+      "sha256": "3fcd758bdd445ce771f3185dd5d1fac63e5f87b1a86d187111629b4206c0d6a3",
+      "bytes": 6439
+    },
+    {
+      "path": "tests_next/test_ideas.py",
+      "sha256": "b61463fa4d34d9c7241be645d4c78470b0a0c39f996b672311ec7783a3a1d8ca",
+      "bytes": 2573
+    },
+    {
+      "path": "tests_next/test_interpret.py",
+      "sha256": "2f811c8ac40fcf0b9d441a3ed6dec9aef43e87ee0b90c708ba91ea8a2f0f184d",
+      "bytes": 2276
+    },
+    {
+      "path": "tests_next/test_memory_search.py",
+      "sha256": "315c25d29faa1dd64af6751a4d6125b17b489cabb8c911e0debb74c6b1835050",
+      "bytes": 3431
+    },
+    {
+      "path": "tests_next/test_meta_provider.py",
+      "sha256": "ad5183b2633220a248f7ccc4e693128b3b6a49949d96938dd94be8571b9059ea",
+      "bytes": 4984
+    },
+    {
+      "path": "tests_next/test_muse_artifacts.py",
+      "sha256": "c6c7d62ba30b97cca28127e446840227d63eddc7db0a3e0966deaa1a48aedb33",
+      "bytes": 6594
+    },
+    {
+      "path": "tests_next/test_muse_reconciliation.py",
+      "sha256": "5741952842f1afdceedcf272c35b088b306ad7dab475cc681d1f3fefe39ff759",
+      "bytes": 6957
+    },
+    {
+      "path": "tests_next/test_nightly.py",
+      "sha256": "1e4e2779acf768ea3bfdfee37ce6862dc61b2a8f4dbb733f9e0c75c769b83b74",
+      "bytes": 4965
+    },
+    {
+      "path": "tests_next/test_notion_delivery.py",
+      "sha256": "3a76e4b69a316afb0d55c3e6c30f11aa5800555a9042d4b21dc81677e614bcae",
+      "bytes": 7620
+    },
+    {
+      "path": "tests_next/test_outgoing_actions.py",
+      "sha256": "3ad41bfafc69be89585e1ef53d1d96428232e241905d0a417ac6efeb32fb1587",
+      "bytes": 11880
+    },
+    {
+      "path": "tests_next/test_phone.py",
+      "sha256": "2988a232b5b4defe34b061532eb6c84ca5b11975a8b2c90940bc651c1ee199a7",
+      "bytes": 3262
+    },
+    {
+      "path": "tests_next/test_process_day.py",
+      "sha256": "5dea173cd31583285e66bdba6e5c4dcc50ea3299de8d7db17f12dc96cafea8f0",
+      "bytes": 9675
+    },
+    {
+      "path": "tests_next/test_recordings.py",
+      "sha256": "e75af45635e9b82fd2ad84746bda338bb06e8413f4dd01373e3980dfb9fe6af0",
+      "bytes": 3430
+    },
+    {
+      "path": "tests_next/test_reference.py",
+      "sha256": "9b89061477cfc04cc308391b92137d87f08e303018f5e7950460f32d87c1e2b4",
+      "bytes": 5812
+    },
+    {
+      "path": "tests_next/test_repeatable_demo.py",
+      "sha256": "4534ac9c697d32fcc9fdc5ad311ebecc4d0869be5b344118a6f32f4ecf5fb992",
+      "bytes": 3340
+    },
+    {
+      "path": "tests_next/test_review_organization.py",
+      "sha256": "761bbda9653730911d990d6cc6a572418f8179e3437712cd467d4582ae286332",
+      "bytes": 3130
+    },
+    {
+      "path": "tests_next/test_server.py",
+      "sha256": "207747216b18031c55f3f8569f7b6dd42d3f5b2733d249f8394022206969aa7b",
+      "bytes": 10765
+    },
+    {
+      "path": "tests_next/test_store.py",
+      "sha256": "f8efc752d5f0778ecf9fd534c3ee5ea3e0498029b275aeb10730369841e84461",
+      "bytes": 5020
+    },
+    {
+      "path": "tests_next/test_subject_folders.py",
+      "sha256": "3d2f7ef5906eabff40a4069c730648fce9d38feaf05f061d2712cc9d79bb6d9e",
+      "bytes": 4214
+    },
+    {
+      "path": "tests_next/test_transcription_jobs.py",
+      "sha256": "749360867afbf663e526e6dce58ab8395e94d3507cdc5a8a9971425e91e3ca3f",
+      "bytes": 7161
+    },
+    {
+      "path": "tests_next/test_workflow.py",
+      "sha256": "e0e4d2ff88b3eb1caaea9a32699a5c718c613d78971e910bf55c2f4395319246",
+      "bytes": 5356
+    },
+    {
+      "path": "tests_next/test_workspace.py",
+      "sha256": "478bbf87ce35aba991b28270f47b333333788966a12535e12c15788244066866",
+      "bytes": 8273
+    },
+    {
+      "path": "tools/build_public_release.py",
+      "sha256": "e94ad2094bdd8ca79e232d081173a39493a1d509a2906bd14aad5ee36f9cf731",
+      "bytes": 4249
+    },
+    {
+      "path": "tools/phone_access.py",
+      "sha256": "9a8053ee10bf786e329f8e6830866173a5b0a755c3e424801f3b829acff486fc",
+      "bytes": 3493
+    }
+  ],
+  "scan": "allowlist + known environment credential match + obvious token/private path patterns",
+  "scan_findings": [],
+  "limitations": "Automated scanning is not a complete secret or ownership audit. Review before publishing.",
+  "excluded": [
+    "legacy lima/",
+    "recordings",
+    "databases",
+    "DPAPI credential files",
+    ".env files",
+    "private handoffs",
+    "research PDFs",
+    "work/",
+    ".venv/",
+    "historical planning docs"
+  ],
+  "publication": "Local candidate only. Nothing pushed or published. License not selected."
+}

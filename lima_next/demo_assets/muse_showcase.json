@@ -1,0 +1,86 @@
+{
+  "synthetic": true,
+  "provenance": "Recorded actual Muse Spark 1.3 outputs from the November 2 scripted evaluation. No outward writes. Initial output-limit failure and resumed completion are disclosed in the runbook. Offline replay remaps local IDs; no fresh model call is claimed.",
+  "day": "2026-11-02",
+  "source": "SYNTHETIC EVALUATION. Names, email addresses and phone numbers below are scripted test data.\nUSER: Please draft an email to alex@example.com asking whether our Lima demonstration is confirmed.\nAlex Rivera: My contact details are Alex Rivera, alex@example.com, +15551234567. Please save my contact information.\nUSER: Draft a text to Alex Rivera at +15551234567 asking whether the demonstration is confirmed. Do not send it.\nUSER: Propose a personal calendar block called Prepare Lima demonstration on 2026-11-03 from 14:00 to 14:30 America/Chicago. No guests.\n",
+  "prior": {
+    "content": "USER: We agreed to demonstrate Lima on 2026-11-04.",
+    "subject": "Demonstration",
+    "value": "Demonstrate Lima on 2026-11-04",
+    "original_id": "3e7a3156c71230bdd7394bc2041c10c02d995686257053caac5cd21e1fa9d971"
+  },
+  "actions": [
+    {
+      "kind": "calendar_create",
+      "subject": "Prepare Lima demonstration",
+      "body": "Personal block to prepare for the Lima demonstration.",
+      "to": [],
+      "cc": [],
+      "bcc": [],
+      "calendar_id": "",
+      "event_id": "",
+      "start": "2026-11-03T14:00",
+      "end": "2026-11-03T14:30",
+      "timezone": "America/Chicago",
+      "quote": "Propose a personal calendar block called Prepare Lima demonstration on 2026-11-03 from 14:00 to 14:30 America/Chicago. No guests.",
+      "original_id": "8743a21524834e9bca34f97ef5cd415f40c2503919a07a47e33d42ef5ab8b4a9"
+    },
+    {
+      "kind": "text",
+      "subject": "Demonstration confirmation",
+      "body": "Hi Alex, could you please let me know whether the demonstration is confirmed?",
+      "to": [],
+      "cc": [],
+      "bcc": [],
+      "calendar_id": "",
+      "event_id": "",
+      "start": "",
+      "end": "",
+      "timezone": "America/Chicago",
+      "contact_name": "Alex Rivera",
+      "contact_email": "",
+      "phone": "+15551234567",
+      "quote": "Draft a text to Alex Rivera at +15551234567 asking whether the demonstration is confirmed. Do not send it.",
+      "original_id": "43781a9c35f4cf5472337f2e9ce1ac69e5f33094a2d6940ac5fce494ea9887fe"
+    },
+    {
+      "kind": "contact",
+      "subject": "Alex Rivera contact details",
+      "body": "Save contact: Alex Rivera, alex@example.com, +15551234567.",
+      "to": [],
+      "cc": [],
+      "bcc": [],
+      "calendar_id": "",
+      "event_id": "",
+      "start": "",
+      "end": "",
+      "timezone": "America/Chicago",
+      "contact_name": "Alex Rivera",
+      "contact_email": "alex@example.com",
+      "phone": "+15551234567",
+      "quote": "My contact details are Alex Rivera, alex@example.com, +15551234567. Please save my contact information.",
+      "original_id": "efd146d56ab04187ac6153d0b4384edb817bad375f5ab3faf218c50ad04d4d81"
+    },
+    {
+      "kind": "email",
+      "subject": "Lima demonstration confirmation",
+      "body": "Hi Alex,\n\nCould you please let me know whether our Lima demonstration is confirmed?\n\nThanks very much.",
+      "to": [
+        "alex@example.com"
+      ],
+      "cc": [],
+      "bcc": [],
+      "calendar_id": "",
+      "event_id": "",
+      "start": "",
+      "end": "",
+      "timezone": "America/Chicago",
+      "quote": "Please draft an email to alex@example.com asking whether our Lima demonstration is confirmed.",
+      "original_id": "57012ecbd9fb6af5c487a3149d54e55bbe7ccf6f194fe97c74a5a46c4a0e6578"
+    }
+  ],
+  "daily_note": {
+    "subject": "Daily review \u2014 Synthetic Muse output routing verification",
+    "body": "Lima daily review \u2014 2026-11-02\nProject: Synthetic Muse output routing verification\nMuse Spark 1.3 draft. Review the content before publishing.\n\nReviewed information\n- Plan to demonstrate Lima on 2026-11-04. [evidence: 3e7a3156c71230bdd7394bc2041c10c02d995686257053caac5cd21e1fa9d971]\n\nLearning kept\nNo supported items included in this section.\n\nProposed / uncertain \u2014 needs review\nNo supported items included in this section.\n\nFollow-up queue and destination receipts\nThis is a snapshot. Each outward action requires its own approval; a Notion note never executes its instructions.\n\nLima demonstration confirmation\nGmail: alex@example.com\nStatus: proposed, not delivered\nLima action: 57012ecbd9fb6af5c487a3149d54e55bbe7ccf6f194fe97c74a5a46c4a0e6578\nHi Alex,\n\nCould you please let me know whether our Lima demonstration is confirmed?\n\nThanks very much.\n\nAlex Rivera contact details\nGoogle Contacts: Alex Rivera\nStatus: proposed, not delivered\nLima action: efd146d56ab04187ac6153d0b4384edb817bad375f5ab3faf218c50ad04d4d81\nSave contact: Alex Rivera, alex@example.com, +15551234567.\nContact: Alex Rivera / alex@example.com / +15551234567\n\nDemonstration confirmation\nMessaging app: +15551234567\nStatus: proposed, not delivered\nLima action: 43781a9c35f4cf5472337f2e9ce1ac69e5f33094a2d6940ac5fce494ea9887fe\nHi Alex, could you please let me know whether the demonstration is confirmed?\n\nPrepare Lima demonstration\nCalendar: calendar still needed\nStatus: proposed, not delivered\nLima action: 8743a21524834e9bca34f97ef5cd415f40c2503919a07a47e33d42ef5ab8b4a9\nPersonal block to prepare for the Lima demonstration.\nProposed time: 2026-11-03T14:00 \u2192 2026-11-03T14:30 America/Chicago\n\nEvidence 3e7a3156c71230bdd7394bc2041c10c02d995686257053caac5cd21e1fa9d971: USER: We agreed to demonstrate Lima on 2026-11-04.\nSource: Synthetic prior decision"
+  }
+}
