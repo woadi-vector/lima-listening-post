@@ -71,4 +71,4 @@ NumPy/PyAV exercise optional audio tests without downloading model weights. Actu
 
 This is the rebuilt `lima_next` core, developed with AI coding assistance from an earlier Windows/Python product vision. Legacy code, private handoffs, recordings, data and credentials are excluded. The initial clean repository commit reflects this import; it does not reconstruct historical development commits. See [contributions](CONTRIBUTIONS.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-License selection is pending the owner's decision; no license grant is implied by this draft.
+The rebuilt core is licensed under [MIT](LICENSE), copyright 2026 Jason Wold. Third-party dependencies, model weights and services retain their own terms.

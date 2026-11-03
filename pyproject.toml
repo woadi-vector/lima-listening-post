@@ -5,6 +5,8 @@ build-backend = "hatchling.build"
 [project]
 name = "lima-listening-post"
 version = "0.2.0"
+license = "MIT"
+license-files = ["LICENSE"]
 description = "Evidence-backed project continuity with reviewed AI interpretations"
 requires-python = ">=3.11"
 dependencies = ["tzdata; sys_platform == 'win32'"]

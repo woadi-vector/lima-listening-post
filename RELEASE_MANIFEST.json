@@ -21,14 +21,19 @@
       "bytes": 1641
     },
     {
+      "path": "LICENSE",
+      "sha256": "1371e621e830b6541cf7495b1f18229a1a5adab5a51a2c35fc37c42129cad67c",
+      "bytes": 1088
+    },
+    {
       "path": "Open Lima on phone.cmd",
       "sha256": "a72e70b4303b6982c76b2050551e43cefb95957df5049f8a55f9736a36552e76",
       "bytes": 82
     },
     {
       "path": "README.md",
-      "sha256": "b2eed6e14f0809587bf1d618e1be3c710574c4f0d5af429846ef3e257dcb97c8",
-      "bytes": 6015
+      "sha256": "ca604a029d66496f8b3c1217ca4fc36b5a46d22b373cc534aecfac09259f0cf0",
+      "bytes": 6076
     },
     {
       "path": "SECURITY.md",
@@ -302,8 +307,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "ca9e854487544906105d52c1ac71249c86f18a5ef48ffa0dd47b3b1cca71fe30",
-      "bytes": 514
+      "sha256": "332ca4f0595fef52e5bec6bbf7c6e381150633e9da2a8c617e9f6405d8c93926",
+      "bytes": 580
     },
     {
       "path": "tests_next/test_analysis_jobs.py",
@@ -491,5 +496,5 @@
     ".venv/",
     "historical planning docs"
   ],
-  "publication": "Local candidate only. Nothing pushed or published. License not selected."
+  "publication": "Clean repository release under MIT. Private data and legacy code excluded."
 }
