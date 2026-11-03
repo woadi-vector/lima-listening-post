@@ -46,3 +46,6 @@ Final output-layer verification: 230 tests pass, including explicit country-code
 The real October 20 Muse daily note was reviewed, amended, approved and published through the dedicated Notion connection; read-back and duplicate checks passed. Google Contacts authorization and read access are verified; a live contact write remains deliberately deferred. Earlier chronological checkpoints above describe their state at the time, not current outstanding setup.
 
 The repeatable offline showcase uses scripted data and actual recorded Muse outputs: email, contact, text and calendar proposals plus an unapproved daily repository note. It performs no model calls or outward account writes. The narrated demo cut is 2 minutes 59 seconds and uses UI screenshots and a generic synthetic voice. These demonstrations and specific connection checks do not establish broad extraction accuracy. Licensing and public visibility await the owner's decision.
+
+
+Daily class lesson review: 236 tests pass. Atomic class-only learning approval creates one editable source-linked note; work and assignment candidates remain separate. A synthetic browser check exercised saving the lesson with surrounding conversation and assignment items retained pending. Live service restart is needed to activate the new save endpoint.

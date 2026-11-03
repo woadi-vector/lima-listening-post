@@ -332,6 +332,8 @@ class Handler(BaseHTTPRequestHandler):
                 result = {"ok": True}
             elif self.path == "/api/file-subject":
                 result = subject_folders.file_claim(ws, data["project_id"], data["claim_id"], data["name"])
+            elif self.path == "/api/keep-class-lesson":
+                result = review_organization.keep_lesson(ws, data.get("ids"), data.get("title"))
             elif self.path == "/api/keep-learning-group":
                 result = review_organization.keep_learning(ws, data.get("ids"))
             elif self.path == "/api/keep-reference":
@@ -388,7 +390,7 @@ class Handler(BaseHTTPRequestHandler):
 
 def load_demo(ws):
     """Only synthetic records, visibly labeled; repeat loading does not duplicate them."""
-    project = ws.create_project("Sample · Research demo", 2)
+    project = ws.create_project("Sample Â· Research demo", 2)
     text1 = ("USER: The app is complete.\nUSER: I will prepare the demo video.\n"
              "USER: Use slides for the presentation.\nTV: I am moving to Chicago next month.")
     text2 = ("USER: Replace the slides plan with a live demo.\n"

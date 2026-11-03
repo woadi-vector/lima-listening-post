@@ -67,3 +67,65 @@ def keep_learning(ws, ids):
         for c in chosen:
             ws.db.execute('INSERT INTO claim_reviews VALUES (?,?,?,?,?)',(c['id'],'accepted',None,'local-user-group-learning',_now()))
     return {'kept':len(chosen),'work_created':False,'external_execution':False}
+
+
+# Conservative review routing, not a finding that an assignment exists.
+def lesson_learning(claim):
+    import re
+    return (claim.get('context_category') == 'class' and claim['kind'] == 'reference'
+            and not claim.get('review_block_reason') and not claim.get('reference_block_reason')
+            and not claim.get('due_date') and not re.search(
+                r'\b(assignment|deadline|exam|submit|submission|due|homework)\b',
+                claim['subject'] + ' ' + claim['value'], re.I))
+
+
+def keep_lesson(ws, ids, title):
+    """One explicitly selected class period; preserve every source span and review."""
+    from . import drafts
+    from .store import _canonical
+    from .workspace import fingerprint
+    import uuid
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    if not isinstance(title, str) or not 1 <= len(title.strip()) <= 200:
+        raise ValueError('Name this class lesson in 200 characters or fewer.')
+    if not isinstance(ids, list) or not 1 <= len(ids) <= 100 or any(not isinstance(i,str) for i in ids) or len(set(ids)) != len(ids):
+        raise ValueError('Choose one to 100 explicit lesson passages.')
+    drafts.schema(ws)
+    with ws.db:
+        ws.db.execute('BEGIN IMMEDIATE')
+        claims = {c['id']:c for c in ws.claims()}
+        chosen = [claims.get(i) for i in ids]
+        if any(c is None or c['review'] != 'pending' or not lesson_learning(c) for c in chosen):
+            raise ValueError('Lesson passages changed or need individual review. Refresh first.')
+        if len({(c['project_id'], c['record_id']) for c in chosen}) != 1:
+            raise ValueError('Keep one project and recording per class lesson.')
+        chosen.sort(key=lambda c:c['start_offset'])
+        project = chosen[0]['project_id']; record = ws.record(chosen[0]['record_id'])
+        captured = record.get('captured_at')
+        try:
+            as_of = datetime.fromisoformat(captured.replace('Z','+00:00')).astimezone(ZoneInfo('America/Chicago')).date().isoformat() if captured else datetime.now(ZoneInfo('America/Chicago')).date().isoformat()
+        except (ValueError, AttributeError):
+            raise ValueError('The lesson capture date needs correction.')
+        lines = [title.strip(), ('Class lesson · ' if captured else 'Capture date unknown; note saved · ') + as_of,
+                 'Source statements reviewed as learning; not independent fact checks or personal commitments.',
+                 'One class period selected by the reviewer. Surrounding conversations and possible assignments are excluded.', '']
+        topics = {}
+        for c in chosen: topics.setdefault(c['subject'], []).append(c)
+        for topic, items in topics.items():
+            lines.append(topic)
+            lines.extend('- ' + c['value'] for c in items)
+            lines.append('')
+        lines.append('Supporting transcript passages')
+        for n,c in enumerate(chosen,1):
+            lines.extend([f"[{n}] {c['external_id']} · span {c['start_offset']}–{c['end_offset']}", c['quote'], ''])
+        for c in chosen:
+            ws.db.execute('INSERT INTO claim_reviews VALUES (?,?,?,?,?)',(c['id'],'accepted',None,'local-user-class-lesson',_now()))
+        identity = fingerprint({'lesson':sorted(ids),'title':title.strip()})
+        now = _now()
+        ws.db.execute('INSERT INTO local_drafts VALUES (?,?,?,?,?,?,?)',
+                      (identity,project,'notes',as_of,drafts.project_stamp(ws,project),_canonical(chosen),now))
+        ws.db.execute('INSERT INTO local_draft_versions VALUES (?,?,?,?,?)',
+                      (uuid.uuid4().hex,identity,title.strip(),'\n'.join(lines).strip(),now))
+    return {'kept':len(chosen),'draft':drafts.get(ws,identity),'work_created':False,'external_execution':False}
+

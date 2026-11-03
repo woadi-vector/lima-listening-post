@@ -42,3 +42,35 @@ class ReviewOrganizationTests(unittest.TestCase):
             {'id':self.work,'category':'meeting','quote':'An invented supporting quotation.'}]})
         self.assertEqual(result['organized'],0);self.assertEqual(len(result['errors']),2)
         self.assertIsNone(next(c for c in self.ws.claims() if c['id']==self.work)['context_category'])
+
+
+    def test_daily_lesson_saves_one_editable_note_and_leaves_work_pending(self):
+        result=organization.keep_lesson(self.ws,[self.ref],'History — daily lesson')
+        self.assertEqual(result['kept'],1)
+        self.assertFalse(result['work_created'])
+        note=result['draft'];self.assertEqual(note['status'],'prepared')
+        self.assertIn(self.quote,note['body']);self.assertEqual(note['evidence'][0]['id'],self.ref)
+        self.assertEqual(next(c for c in self.ws.claims() if c['id']==self.work)['review'],'pending')
+        from lima_next import drafts
+        amended=drafts.edit(self.ws,note['id'],note['version_id'],'Revised lesson',note['body']+'\nMy study note.')
+        self.assertEqual(amended['subject'],'Revised lesson')
+        with self.assertRaises(ValueError):organization.keep_lesson(self.ws,[self.ref],'Repeat')
+
+    def test_lesson_rejects_assignments_other_context_and_work_atomically(self):
+        for extra in (self.work,):
+            with self.assertRaises(ValueError):organization.keep_lesson(self.ws,[self.ref,extra],'Lesson')
+        with self.ws.db:self.ws.db.execute('UPDATE claim_contexts SET category=? WHERE claim_id=?',('conversation',self.ref))
+        with self.assertRaises(ValueError):organization.keep_lesson(self.ws,[self.ref],'Lesson')
+        self.assertTrue(all(c['review']=='pending' for c in self.ws.claims()))
+        self.assertEqual(self.ws.db.execute('SELECT count(*) FROM local_drafts').fetchone()[0],0)
+        c=next(c for c in self.ws.claims() if c['id']==self.ref)
+        c.update(context_category='class',subject='Assignment',value='Send questions Saturday')
+        self.assertFalse(organization.lesson_learning(c))
+        c.update(subject='History',value='History notes',due_date='2026-11-07')
+        self.assertFalse(organization.lesson_learning(c))
+
+    def test_lesson_refuses_cross_record_and_cross_project(self):
+        other=self.ws.import_text([self.project],kind='text',external_id='Another class',content=self.quote)
+        ref=propose_candidates(self.ws,self.project,other,[{'quote':self.quote,'kind':'reference','subject':'History','value':'History learning','source_context':'class'}])['pending_ids'][0]
+        with self.assertRaises(ValueError):organization.keep_lesson(self.ws,[self.ref,ref],'Merged')
+        self.assertTrue(all(c['review']=='pending' for c in self.ws.claims()))
