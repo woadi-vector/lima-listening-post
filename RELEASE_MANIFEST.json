@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ca604a029d66496f8b3c1217ca4fc36b5a46d22b373cc534aecfac09259f0cf0",
-      "bytes": 6076
+      "sha256": "faef75b2127c9ab8374d6c6b3dd41ff2b5079109e87554da62ec6fdcdfac9e8f",
+      "bytes": 6511
     },
     {
       "path": "SECURITY.md",
@@ -109,6 +109,11 @@
       "path": "docs/TUESDAY_FIELD_TEST.md",
       "sha256": "5044e87ae248f7e7191e8e6d9959e5641e87503772156ace19d6486b8dba47ec",
       "bytes": 3404
+    },
+    {
+      "path": "docs/USER_LEARNING_ROADMAP.md",
+      "sha256": "134e8eb737751bb3a2266ef416e3cb0bf51dc01a785e8fd62dc115a43bae882b",
+      "bytes": 4530
     },
     {
       "path": "lima_next/__init__.py",
@@ -472,8 +477,8 @@
     },
     {
       "path": "tools/build_public_release.py",
-      "sha256": "e94ad2094bdd8ca79e232d081173a39493a1d509a2906bd14aad5ee36f9cf731",
-      "bytes": 4249
+      "sha256": "9d0a3b035f613b0a02b8cb55e12c94cbdb972fdfd365ae907677cd358c4cfe85",
+      "bytes": 4276
     },
     {
       "path": "tools/phone_access.py",
@@ -496,5 +501,5 @@
     ".venv/",
     "historical planning docs"
   ],
-  "publication": "Clean repository release under MIT. Private data and legacy code excluded."
+  "publication": "Clean public repository under MIT. Private data and legacy code excluded."
 }
