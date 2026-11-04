@@ -114,7 +114,7 @@ def keep_lesson(ws, ids, title):
         for c in chosen: topics.setdefault(c['subject'], []).append(c)
         for topic, items in topics.items():
             lines.append(topic)
-            lines.extend('- ' + c['value'] for c in items)
+            lines.extend('- ' + c['value'] for c in distinct_lesson_points(items))
             lines.append('')
         lines.append('Supporting transcript passages')
         for n,c in enumerate(chosen,1):
@@ -129,3 +129,15 @@ def keep_lesson(ws, ids, title):
                       (uuid.uuid4().hex,identity,title.strip(),'\n'.join(lines).strip(),now))
     return {'kept':len(chosen),'draft':drafts.get(ws,identity),'work_created':False,'external_execution':False}
 
+
+
+def distinct_lesson_points(items):
+    """Presentation-only overlap removal; every original passage remains cited."""
+    kept=[]
+    for c in items:
+        quote=' '.join(c['quote'].casefold().split()).strip(' .')
+        if len(quote)>=30 and any(len(old['quote'].strip())>=30 and c['subject'].casefold()==old['subject'].casefold() and
+            (quote in ' '.join(old['quote'].casefold().split()).strip(' .') or
+             ' '.join(old['quote'].casefold().split()).strip(' .') in quote) for old in kept):continue
+        kept.append(c)
+    return kept

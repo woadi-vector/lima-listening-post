@@ -43,3 +43,8 @@ The generated narrated MP4 is a recorded walkthrough with a generic synthetic vo
 ## Real delivery demonstrations
 
 Connections are per workspace. Use a dedicated, explicitly approved synthetic recipient/event/note and configure its destination separately. Never attach production credentials or private databases to the public demo. Do not send to example.com or a fictional phone number. The offline showcase contains no real account writes and does not fabricate delivery receipts.
+
+
+## November 3 field update for the submission
+
+Use the public field checkpoint for real-day counts. The actual day contained three transcripts and returned zero outgoing drafts. Do not present the synthetic showcase's four follow-ups as field-day results. Show the two class lessons and the daily coverage inventory in a separate field segment; keep private raw transcripts, identities and unrelated projects out of public footage. The local 2:59 demo remains a disclosed recorded-Muse synthetic walkthrough. Personal learning and AWS deployment are roadmap items.

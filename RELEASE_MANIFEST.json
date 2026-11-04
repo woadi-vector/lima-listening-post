@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "faef75b2127c9ab8374d6c6b3dd41ff2b5079109e87554da62ec6fdcdfac9e8f",
-      "bytes": 6511
+      "sha256": "ab0a9b0032aba977e8e62683c33c1911f01e298c361e2e6059d20d84362841ba",
+      "bytes": 6675
     },
     {
       "path": "SECURITY.md",
@@ -47,8 +47,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "sha256": "8b41cbea620b7e54f1891f2ce56d885b27ccb858fc333db643ea0280702bb140",
-      "bytes": 8718
+      "sha256": "46868a7e67e1935a645385573f5d51a2a7c76365bab9fac92c4f21412843dbee",
+      "bytes": 9053
     },
     {
       "path": "docs/CHANGE_VIEW.md",
@@ -57,13 +57,18 @@
     },
     {
       "path": "docs/DEMO_RUNBOOK.md",
-      "sha256": "d366aa1c0c3a5a82e49c29ce95646a99d311f8565abdb6af808bf7bbf738fcba",
-      "bytes": 3715
+      "sha256": "d54c7fb24748b3cbe134de22a002af5505296a8a5238e956c3ab48cd396ebd33",
+      "bytes": 4287
     },
     {
       "path": "docs/EMERGING_IDEAS.md",
       "sha256": "d34547a10dc64b38e0630dea8a4d6c0e34a77c0269714bfb6bebcbcdbcf9be49",
       "bytes": 1821
+    },
+    {
+      "path": "docs/FIELD_RESULTS_2026-11-03.md",
+      "sha256": "c368fdd05c2b6861badac59a1fe6a9533d1cf383f976f264511fe01a4e410c56",
+      "bytes": 2772
     },
     {
       "path": "docs/GOOGLE_CONNECTION.md",
@@ -162,8 +167,8 @@
     },
     {
       "path": "lima_next/daily_artifacts.py",
-      "sha256": "cd8a4855977fea418781334a63096b66b8e0c237a588bc52cf2677a737a3d3b8",
-      "bytes": 9291
+      "sha256": "7a255bc2ea2736f02fcd05d50c16dcd6394cf3142f6f24f162d6ccd0240cb2e8",
+      "bytes": 11898
     },
     {
       "path": "lima_next/demo.py",
@@ -212,8 +217,8 @@
     },
     {
       "path": "lima_next/muse_reconciliation.py",
-      "sha256": "84817f2259beaf3fe85e10a092c838fbcf61616dc2f80b53cf8cf3b95359b37a",
-      "bytes": 11813
+      "sha256": "31248920bf8d2b95e2199517a965579ca0f6c7be20f62a1b9c79b249231b4952",
+      "bytes": 12458
     },
     {
       "path": "lima_next/nightly.py",
@@ -247,8 +252,8 @@
     },
     {
       "path": "lima_next/review_organization.py",
-      "sha256": "e6e758be1235e8740b16e64fbc3035212b56da757b24998920debb8f3eb6a071",
-      "bytes": 9087
+      "sha256": "74cda0f6daa44d49c4ae407a8cb703d1471bdcaa2ce75bfc88ff926f85d64d04",
+      "bytes": 9685
     },
     {
       "path": "lima_next/server.py",
@@ -272,8 +277,8 @@
     },
     {
       "path": "lima_next/web/app.js",
-      "sha256": "62c08a695012f4048d413483856f450bd530a3f4158f65b8bab329867d455574",
-      "bytes": 76944
+      "sha256": "1afca2b9106e61f6ca11fd1978f7faac5e8261b78176962aeaac2591794b3bb0",
+      "bytes": 77163
     },
     {
       "path": "lima_next/web/communications.js",
@@ -282,8 +287,8 @@
     },
     {
       "path": "lima_next/web/day.js",
-      "sha256": "90bfa70b29958e28332a1d05e143444e0839db99f6e6f5a78bb4ea0274e9422a",
-      "bytes": 29396
+      "sha256": "c0976bc8ba1fe26ed851711e3e4d471efaf364dcc05a90645616d19c8ad9ceac",
+      "bytes": 32209
     },
     {
       "path": "lima_next/web/file-import.js",
@@ -392,13 +397,13 @@
     },
     {
       "path": "tests_next/test_muse_artifacts.py",
-      "sha256": "c6c7d62ba30b97cca28127e446840227d63eddc7db0a3e0966deaa1a48aedb33",
-      "bytes": 6594
+      "sha256": "a7e9bc56e995ffcea42fd6bbb36c19405161c7089da154ac6ae11138f233494e",
+      "bytes": 7216
     },
     {
       "path": "tests_next/test_muse_reconciliation.py",
-      "sha256": "5741952842f1afdceedcf272c35b088b306ad7dab475cc681d1f3fefe39ff759",
-      "bytes": 6957
+      "sha256": "aa9d55bb23084fb264d9345773a53c25c53b887af6c011891e3cf1cc99928faf",
+      "bytes": 7634
     },
     {
       "path": "tests_next/test_nightly.py",
@@ -442,8 +447,8 @@
     },
     {
       "path": "tests_next/test_review_organization.py",
-      "sha256": "fe4b76063bcac3d4f26e1d895f0905b87be26f6fce0723c46b70c80e8fdbc805",
-      "bytes": 5583
+      "sha256": "f8d394bb7c883958fef32e455590762f155d471c5662fa156ef48361f863462d",
+      "bytes": 6247
     },
     {
       "path": "tests_next/test_server.py",
@@ -477,8 +482,8 @@
     },
     {
       "path": "tools/build_public_release.py",
-      "sha256": "9d0a3b035f613b0a02b8cb55e12c94cbdb972fdfd365ae907677cd358c4cfe85",
-      "bytes": 4276
+      "sha256": "83c0a240aee6df6356b0affe08e649cdbb54aca263ed9306590403a1cf8d9130",
+      "bytes": 4306
     },
     {
       "path": "tools/phone_access.py",

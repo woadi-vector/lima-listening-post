@@ -97,3 +97,11 @@ class MuseReconciliationTests(unittest.TestCase):
                 self.assertTrue(analyze.call_args.kwargs['memory_consent'])
                 self.assertTrue(analyze.call_args.kwargs['cloud_consent'])
         finally:jobs.close()
+
+
+    def test_source_is_not_compared_against_its_own_reviewed_claims(self):
+        claim=self.ws.propose_claim(self.project,self.record,start=0,end=len(self.text),kind='reference',subject='Condition',value='Testing condition',attribution='other')
+        self.ws.review_claim(claim,decision='accepted',actor='synthetic')
+        seen=[]
+        recon.analyze(self.ws,self.project,self.record,cloud_consent=True,memory_consent=True,extractor=lambda p:seen.extend(p['reviewed_memory']) or {'comparisons':[]})
+        self.assertEqual([c['id'] for c in seen],[self.old])

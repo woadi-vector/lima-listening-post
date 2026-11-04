@@ -45,7 +45,7 @@ class ReviewOrganizationTests(unittest.TestCase):
 
 
     def test_daily_lesson_saves_one_editable_note_and_leaves_work_pending(self):
-        result=organization.keep_lesson(self.ws,[self.ref],'History — daily lesson')
+        result=organization.keep_lesson(self.ws,[self.ref],'History â€” daily lesson')
         self.assertEqual(result['kept'],1)
         self.assertFalse(result['work_created'])
         note=result['draft'];self.assertEqual(note['status'],'prepared')
@@ -74,3 +74,11 @@ class ReviewOrganizationTests(unittest.TestCase):
         ref=propose_candidates(self.ws,self.project,other,[{'quote':self.quote,'kind':'reference','subject':'History','value':'History learning','source_context':'class'}])['pending_ids'][0]
         with self.assertRaises(ValueError):organization.keep_lesson(self.ws,[self.ref,ref],'Merged')
         self.assertTrue(all(c['review']=='pending' for c in self.ws.claims()))
+
+
+    def test_lesson_overlap_dedup_preserves_distinct_topics_and_all_evidence(self):
+        first={'subject':'Returns','value':'Ten times','quote':'The rule of thumb is investors want a ten times return.'}
+        repeated={**first,'value':'10x','quote':'rule of thumb is investors want a ten times return.'}
+        different={**first,'value':'Twenty percent','quote':'Investors want twenty percent annually for high risk.'}
+        self.assertEqual(organization.distinct_lesson_points([first,repeated,different]),[first,different])
+        self.assertEqual(len(organization.distinct_lesson_points([first,{**repeated,'subject':'Other topic'}])),2)

@@ -4,9 +4,11 @@ Bee captures the conversation. Muse prepares the follow-through. You review it. 
 
 Lima connects what was said to ongoing work using exact source evidence, project memory and an editable review queue. It can prepare a full day in the background or one meeting when a follow-up cannot wait.
 
+See the [November 3 real-day checkpoint](docs/FIELD_RESULTS_2026-11-03.md) for measured processing coverage, limitations and resulting review improvements.
+
 ## Personal assistant direction
 
-Lima is intended to learn the user’s correspondence preferences, routines and project context through reviewed evidence and corrections. Today it retains project memory and draft versions; automatic personal preference learning is planned, not implemented. Bee and Muse are the current workflow. AWS deployment is a future option. See the [user learning roadmap](docs/USER_LEARNING_ROADMAP.md).
+Lima is intended to learn the userâ€™s correspondence preferences, routines and project context through reviewed evidence and corrections. Today it retains project memory and draft versions; automatic personal preference learning is planned, not implemented. Bee and Muse are the current workflow. AWS deployment is a future option. See the [user learning roadmap](docs/USER_LEARNING_ROADMAP.md).
 
 ## Try the repeatable demo
 

@@ -1,7 +1,7 @@
-# Release-candidate validation — November 1, 2026
+# Release-candidate validation â€” November 1, 2026
 
 - 206 automated tests pass in the development source and the initial isolated release copy. These verify software behavior and synthetic cases, not overall model accuracy.
-- Live Meta smoke evaluation: five synthetic cases passed the declared checks — explicit commitment, unagreed proposal, background first-person speech, conditional statement and missing date. Candidates remained pending. A separate two-case ideas check retained a tentative interest and excluded a background lecturer's example.
+- Live Meta smoke evaluation: five synthetic cases passed the declared checks â€” explicit commitment, unagreed proposal, background first-person speech, conditional statement and missing date. Candidates remained pending. A separate two-case ideas check retained a tentative interest and excluded a background lecturer's example.
 - Real Notion delivery with synthetic fixture text was read back successfully through the dedicated connection. Repeating the completed request returned the same daily page. No email was sent. Unit tests additionally cover timeout recovery, edited-note protection, stale approvals, preview expiry and same-day/new-day behavior.
 - Windows DPAPI protection/unprotection passed a synthetic credential round trip.
 - Browser verification exercised the isolated demo's pending deadline, explicit replacement selection and review. The standalone release copy served Mission Control with the labeled fixture.
@@ -49,3 +49,6 @@ The repeatable offline showcase uses scripted data and actual recorded Muse outp
 
 
 Daily class lesson review: 236 tests pass. Atomic class-only learning approval creates one editable source-linked note; work and assignment candidates remain separate. A synthetic browser check exercised saving the lesson with surrounding conversation and assignment items retained pending. Live service restart is needed to activate the new save endpoint.
+
+
+November 3 field polish: 239 tests pass. Deterministic all-source daily coverage, short evidence labels, preserved identity links, source-self-exclusion in reconciliation and overlap-only lesson deduplication added. See docs/FIELD_RESULTS_2026-11-03.md for the field checkpoint and classification adaptation boundaries.

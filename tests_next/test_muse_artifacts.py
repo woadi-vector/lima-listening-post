@@ -85,3 +85,13 @@ class MuseArtifactTests(unittest.TestCase):
     def test_repeated_note_preparation_preserves_amendments(self):
         note=self.note();edited=drafts.edit(self.ws,note['id'],note['version_id'],note['subject'],'My amended daily review.')
         again=self.note();self.assertEqual(again['version_id'],edited['version_id']);self.assertEqual(again['body'],'My amended daily review.')
+
+
+    def test_daily_coverage_shows_uncited_pending_sources_and_short_evidence_labels(self):
+        with self.ws.db:self.ws.db.execute('INSERT INTO claim_contexts VALUES (?,?,?)',(self.claim,'class','synthetic'))
+        note=self.note()
+        self.assertIn('Day coverage',note['body'])
+        self.assertIn('Class lesson: 1 evidence points; 1 awaiting review',note['body'])
+        self.assertIn('No outgoing drafts were proposed',note['body'])
+        self.assertIn('[E1]',note['body']);self.assertNotIn('[evidence: '+self.claim,note['body'])
+        self.assertEqual(note['evidence'][0]['id'],self.claim)
