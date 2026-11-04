@@ -45,3 +45,14 @@ A meeting can be processed before the end of the day, once Bee has delivered its
 A user can select a non-reference interpretation and explicitly allow Muse to prepare a reminder from that item and its surrounding passage. This creates an unapproved personal-calendar candidate without accepting the interpretation. Original context is attached deterministically so a short phrase such as "do that" retains its preceding subject. Date, time, duration and calendar remain for the user to supply. These candidates are added to the most recent completed day containing that project/source. A lecturer's offer to compile submissions does not become the user's task to compile them. Recurring series are not supported.
 
 The review badge counts an eligible class lesson as one review decision; supporting evidence-point counts remain visible separately. Internal evidence and review history are preserved.
+
+
+## Simplified daily interface (November 4)
+
+Today shows the day, Process my day, Continue my review and a Saved learning link. Unassigned Bee transcripts for that day are included by default in the displayed, explicitly consented source snapshot. Workspace/scope and inclusion choices remain under Options; project ranking and folder counts are removed from the main daily surface. This is not automatic cross-project routing.
+
+Continue my review opens a short summary followed directly by editable follow-up cards. Calendar drafts use date/time pickers when their existing values have no explicit offset; existing offset-bearing values remain intact. A sole owned calendar is shown as the default selection, still subject to content/destination preview and approval. Save for later retains incomplete drafts locally; it does not create a Google Calendar event. Each send or account write retains its exact approval and duplicate/uncertain-write checks. No batch sending is implied.
+
+Class lessons can be left in Saved learning and opened in a study reader with supporting passages behind a disclosure. Pending class learning remains available without being accepted as project work. Assignment candidates remain in follow-up/evidence review, rather than appearing as an extra class lesson. Projects, subject folders, source import and detailed diagnostics remain reachable through library links and disclosures.
+
+Unfinished, non-dismissed proposals from earlier day jobs are included in the same follow-up queue, with completed deliveries excluded. Stale or uncertain delivery states retain their holds; carrying a draft forward never refreshes its approval or retries a write.

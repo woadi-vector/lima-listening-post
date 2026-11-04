@@ -47,8 +47,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "sha256": "25cfb5f8f226e7ab942006c390f6321cec0b76f9079390a310194eb6ae94a477",
-      "bytes": 9447
+      "sha256": "f52a76a4203d24d1ecabdc5e9d8025be0e4dfb5eb9cf3edd1837b6eeb02e992a",
+      "bytes": 9826
     },
     {
       "path": "docs/CHANGE_VIEW.md",
@@ -97,8 +97,8 @@
     },
     {
       "path": "docs/PROCESS_MY_DAY.md",
-      "sha256": "ecda6eb6fed6f12e3ef475fdcf85daa10ecbad87caef932b3934a1c6c3fd7b34",
-      "bytes": 6064
+      "sha256": "57bb267e5a09c55d203d297ec9a08852e7b02a5d5fb489580c49bc7ba5720973",
+      "bytes": 7756
     },
     {
       "path": "docs/REVIEW_ORGANIZATION.md",
@@ -277,18 +277,18 @@
     },
     {
       "path": "lima_next/web/app.js",
-      "sha256": "feca45690ce99a23c96469945873fddeb5d23148da94f74b9296c26c08a3abe9",
-      "bytes": 78253
+      "sha256": "c5706b1f3091289ab1875cfa24069f5b629271067685921b0f65cbcdd5749a47",
+      "bytes": 78345
     },
     {
       "path": "lima_next/web/communications.js",
-      "sha256": "d8244fff40ed540eea4aefdb56ade78934dc9859858624dd37a9841eb1f89724",
-      "bytes": 5556
+      "sha256": "9ab399a36a0f4eab36d9b8b8025d6f269cd12e5739d2141bb8fad18f8a5bd182",
+      "bytes": 5596
     },
     {
       "path": "lima_next/web/day.js",
-      "sha256": "5d538fb9a910e9cea6fc1f0a1d3bba568efc56dd3ab2facb9ad20f27d71818c0",
-      "bytes": 32252
+      "sha256": "1e941755eddf88f37a069cca0f10b0b19b0365a0cdebd5b4c0904a4f0aad4d2e",
+      "bytes": 32725
     },
     {
       "path": "lima_next/web/file-import.js",
@@ -302,13 +302,13 @@
     },
     {
       "path": "lima_next/web/style.css",
-      "sha256": "8e6ed8afc40820e7fd254df30eb92bdf21914d41d54e4c2b6dbd5eb105c3e6b5",
-      "bytes": 16084
+      "sha256": "e9f906672bdbf7eb77b864e4f64ae5d5fdd07e8ad889d3674873b34101b04f4e",
+      "bytes": 17623
     },
     {
       "path": "lima_next/web/subjects.js",
-      "sha256": "00effad353b0376da8d2987bbcd694c1e2d45ac509d7b14ef0cdb47d47f92937",
-      "bytes": 6261
+      "sha256": "98e204b572d3db5546abd4efcccc33572e97c3765069db571bc0a16aec055463",
+      "bytes": 14928
     },
     {
       "path": "lima_next/workspace.py",

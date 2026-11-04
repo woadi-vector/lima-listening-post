@@ -4,7 +4,7 @@ function communicationCard(initial){
  card.append(el('h3',action.subject),badge(action.kind==='contact'?'Google contact proposal':'Text message draft'));
  const frozen=action.receipts.some(r=>['sending','unknown','completed'].includes(r.status));
  card.append(el('p',action.stale?'Project context changed. Prepare again before delivery.':action.kind==='text'?'Copy this draft into your messaging app. Lima cannot send SMS.':'Review literal contact details before adding to your Google account.','fine'));
- const details=el('details');details.append(el('summary','Review and amend'),el('blockquote',action.evidence.quote));
+ const details=el('details');details.open=!frozen&&!action.dismissed;details.append(el('summary','Review and amend'),el('blockquote',action.evidence.quote));
  const form=el('form');const fields={};
  for(const [key,label] of [['subject','Title'],['contact_name','Name'],['contact_email','Email'],['phone','Phone, including country code'],['body',action.kind==='text'?'Message text':'Local context note']]){
   const wrapper=el('label',label);const input=el(key==='body'?'textarea':'input');input.value=action[key]||'';input.disabled=frozen;fields[key]=input;wrapper.append(input);form.append(wrapper);

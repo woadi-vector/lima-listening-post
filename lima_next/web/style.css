@@ -27,3 +27,19 @@ label{display:block;font-size:11px;font-weight:500;color:#74816b;margin:17px 0}i
 .demo-notice{padding:12px 16px;border:1px solid #d8e3cf;background:#eef4e7;border-radius:8px;font-size:12px;color:#48613c}
 
 .class-lesson{padding:1.2rem 0;max-width:850px}.class-lesson h3{margin:1.2rem 0 .4rem}.class-lesson li{margin:.45rem 0;line-height:1.55}.lesson-evidence{margin:1.2rem 0}.class-lesson>.background-choice{margin:1rem 0}
+
+/* Daily essentials; management remains reachable from Saved learning. */
+nav button[data-page="sources"],nav button[data-page="review"],nav button[data-page="drafts"]{display:none}
+#home>.today-flow,#home>.home-tools,#home>#metrics{display:none!important}
+.project-head select[aria-label^="Priority for"]{display:none}
+.day-home{max-width:850px;border:0;padding:10px 0 24px}.day-home #day-scope{font-size:13px}.process-options{margin:18px 0}.process-options select{max-width:650px}
+.day-summary{max-width:950px}.day-summary li{margin:12px 0;line-height:1.65}.study-away{margin:0 0 26px}.daily-action-queue>h2{margin-top:20px}.daily-details{margin-top:35px;font-size:12px}.library-management{margin:35px 0}#library>.actions{margin-top:30px}#library .record-button span{display:block;margin-top:6px}
+@media(max-width:720px){nav{grid-template-columns:1fr 1fr}.day-home .field-row{display:block}.day-home{max-width:100%}.daily-action-queue .outgoing-card{padding:18px}}
+
+#day-report-status.compact-day-status{font-size:11px;max-height:2.8em;overflow:auto}.library-management label:has(select[name="priority"]){display:none}
+
+.action-body-preview{font-size:14px;line-height:1.6}.action-review[open]>summary{display:none}.outgoing-card form>label:has(input[type="datetime-local"]){display:inline-block;width:48%;margin-right:2%}
+
+.study-text{font:inherit;line-height:1.8;white-space:pre-wrap}.study-view{max-width:850px;padding:20px 0}.study-view>button{margin:12px 0}
+
+#library.reading-lesson> :not(.study-view){display:none}

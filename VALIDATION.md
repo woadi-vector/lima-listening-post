@@ -55,3 +55,6 @@ November 3 field polish: 239 tests pass. Deterministic all-source daily coverage
 
 
 November 4: 240 tests pass. User-selected interpretations can produce unapproved calendar reminder candidates with deterministic original context, empty scheduling fields and unchanged interpretation reviews. The review badge counts a class lesson once. Three real pending items were drafted with Muse and manually checked/corrected before handoff; no calendar events or emails were sent.
+
+
+November 4 UI simplification: browser checks verified a Today screen without project cards/priorities/counts, the saved class lessons link, a summary followed by editable calendar candidates, and preserved approval controls. JavaScript syntax checks pass. Backend approval behavior was not changed by this layout work; the preceding core suite remains at 240 passing tests.
