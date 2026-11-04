@@ -10,6 +10,8 @@ See the [November 3 real-day checkpoint](docs/FIELD_RESULTS_2026-11-03.md) for m
 
 Lima is intended to learn the userâ€™s correspondence preferences, routines and project context through reviewed evidence and corrections. Today it retains project memory and draft versions; automatic personal preference learning is planned, not implemented. Bee and Muse are the current workflow. AWS deployment is a future option. See the [user learning roadmap](docs/USER_LEARNING_ROADMAP.md).
 
+[Final 2:59 demonstration and release](https://github.com/woadi-vector/lima-listening-post/releases/tag/v0.2.0). The narrated walkthrough uses scripted data and recorded Muse outputs, followed by separately verified field results.
+
 ## Try the repeatable demo
 
 Requires Python 3.11 or newer. Development and controlled account checks use Windows/Python 3.13.
@@ -22,7 +24,7 @@ python -m lima_next.demo --showcase --db demo-data/showcase.sqlite3
 python -m lima_next serve --db demo-data/showcase.sqlite3 --port 8766
 ```
 
-Open http://127.0.0.1:8766 and choose **Open daily review**. This is an offline replay of real Muse Spark 1.3 outputs on a scripted synthetic meeting. The earlier reviewed decision is a fixture. No account is connected, no fresh model call is claimed and no outward action runs. Existing demo files are never reset; use a new database name to repeat.
+Open http://127.0.0.1:8766 and choose **Continue my review**. This is an offline replay of real Muse Spark 1.3 outputs on a scripted synthetic meeting. The earlier reviewed decision is a fixture. No account is connected, no fresh model call is claimed and no outward action runs. Existing demo files are never reset; use a new database name to repeat.
 
 For a fresh model run, create a source-only workspace with `python -m lima_next.demo --day-workflow --db demo-data/fresh.sqlite3`, set MODEL_API_KEY in the process environment, serve that database and explicitly start processing in the UI. See [the three-minute runbook](docs/DEMO_RUNBOOK.md).
 

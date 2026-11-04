@@ -7,7 +7,7 @@ python -m lima_next.demo --showcase --db demo-data/showcase.sqlite3
 python -m lima_next serve --db demo-data/showcase.sqlite3 --port 8766
 ```
 
-Open http://127.0.0.1:8766, then Open daily review. Use a new database name to repeat; an existing database is never reset. The standalone showcase needs no account, recording, model key or Internet connection. Bee and nightly workers begin disabled. Google/Notion are disconnected.
+Open http://127.0.0.1:8766, then Continue my review. Use a new database name to repeat; an existing database is never reset. The standalone showcase needs no account, recording, model key or Internet connection. Bee and nightly workers begin disabled. Google/Notion are disconnected.
 
 This mode replays captured, actual Muse Spark 1.3 output on a scripted synthetic meeting. The earlier reviewed decision is a manually seeded fixture. Four follow-up types and the daily repository draft are recorded model outputs; local IDs are remapped. The UI shows replay provenance. Nothing is presented as a fresh model call or delivered message. The original evaluation hit an output limit; its explicit-low-reasoning resumed run completed. External account checks and field outcomes are separate evidence.
 
@@ -51,3 +51,5 @@ Use the public field checkpoint for real-day counts. The actual day contained th
 
 
 Final cut: lima-three-minute-demo-2026-11-04.mp4, 179.054 seconds. The closing slide reports the separately verified real-day result of two approved personal-calendar creations/read-backs. The preceding scenes remain scripted recorded-Muse replay; do not present them as field-day footage. The video still needs upload to a judge-accessible host.
+
+Public final video: https://github.com/woadi-vector/lima-listening-post/releases/download/v0.2.0/lima-three-minute-demo-2026-11-04.mp4 . Unauthenticated download was verified and matched the local SHA-256. If the submission form restricts video hosts to YouTube, upload this same file there.

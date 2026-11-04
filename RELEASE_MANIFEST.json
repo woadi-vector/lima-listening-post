@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ab0a9b0032aba977e8e62683c33c1911f01e298c361e2e6059d20d84362841ba",
-      "bytes": 6675
+      "sha256": "c4b2314db5ccfc0c279f5a67d9e4cf6bf5475b79d660291b5593ecb2f70bc0c0",
+      "bytes": 6910
     },
     {
       "path": "SECURITY.md",
@@ -57,8 +57,8 @@
     },
     {
       "path": "docs/DEMO_RUNBOOK.md",
-      "sha256": "79f3b1f9a94d9e3b0136c0635cacfbc2844e91903895c173ab147d1a2edffcae",
-      "bytes": 4639
+      "sha256": "0b82fed246ba41868d474fde9b7b253b9df60a18f4754507c534bf24718b086f",
+      "bytes": 4935
     },
     {
       "path": "docs/EMERGING_IDEAS.md",
