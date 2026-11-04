@@ -57,8 +57,8 @@
     },
     {
       "path": "docs/DEMO_RUNBOOK.md",
-      "sha256": "d54c7fb24748b3cbe134de22a002af5505296a8a5238e956c3ab48cd396ebd33",
-      "bytes": 4287
+      "sha256": "79f3b1f9a94d9e3b0136c0635cacfbc2844e91903895c173ab147d1a2edffcae",
+      "bytes": 4639
     },
     {
       "path": "docs/EMERGING_IDEAS.md",
@@ -67,8 +67,8 @@
     },
     {
       "path": "docs/FIELD_RESULTS_2026-11-03.md",
-      "sha256": "c368fdd05c2b6861badac59a1fe6a9533d1cf383f976f264511fe01a4e410c56",
-      "bytes": 2772
+      "sha256": "cda6052e0ab57675f405477872fced3241c998c6ec52d0d5c5c299ae6bcb77ef",
+      "bytes": 4194
     },
     {
       "path": "docs/GOOGLE_CONNECTION.md",

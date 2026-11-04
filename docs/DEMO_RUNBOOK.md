@@ -48,3 +48,6 @@ Connections are per workspace. Use a dedicated, explicitly approved synthetic re
 ## November 3 field update for the submission
 
 Use the public field checkpoint for real-day counts. The actual day contained three transcripts and returned zero outgoing drafts. Do not present the synthetic showcase's four follow-ups as field-day results. Show the two class lessons and the daily coverage inventory in a separate field segment; keep private raw transcripts, identities and unrelated projects out of public footage. The local 2:59 demo remains a disclosed recorded-Muse synthetic walkthrough. Personal learning and AWS deployment are roadmap items.
+
+
+Final cut: lima-three-minute-demo-2026-11-04.mp4, 179.054 seconds. The closing slide reports the separately verified real-day result of two approved personal-calendar creations/read-backs. The preceding scenes remain scripted recorded-Muse replay; do not present them as field-day footage. The video still needs upload to a judge-accessible host.
