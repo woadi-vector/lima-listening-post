@@ -120,3 +120,16 @@ class ProcessDayTests(unittest.TestCase):
         with patch('lima_next.meta_provider.structured_object') as model:
             result=process_day.propose_actions(self.ws,self.project,self.r1)
             self.assertEqual(result['action_ids'],[]);model.assert_not_called()
+
+
+    def test_selected_reminder_keeps_review_pending_and_scheduling_empty(self):
+        claim=self.ws.propose_claim(self.project,self.r1,start=0,end=len(self.first),kind='commitment',subject='Possible follow-up',value='Check follow-up',attribution='uncertain',owner='unknown')
+        with self.assertRaises(ValueError):process_day.propose_selected_reminder(self.ws,claim)
+        candidate={'kind':'calendar_create','subject':'Check follow-up','body':'Review the possible follow-up.','quote':self.first,'to':[],'start':'2026-11-05T07:00','end':'2026-11-05T08:00','timezone':'America/Chicago'}
+        r=process_day.propose_selected_reminder(self.ws,claim,cloud_consent=True,extractor=lambda p:{'actions':[candidate]})
+        self.assertEqual(r['action']['start'],'');self.assertEqual(r['action']['end'],'')
+        self.assertFalse(r['review_changed']);self.assertFalse(r['external_execution'])
+        self.assertEqual(next(c for c in self.ws.claims() if c['id']==claim)['review'],'pending')
+        self.assertIn(self.first,r['action']['evidence']['quote'])
+        bad={**candidate,'kind':'email','quote':'An unrelated fabricated quotation.'}
+        with self.assertRaises(ValueError):process_day.propose_selected_reminder(self.ws,claim,cloud_consent=True,extractor=lambda p:{'actions':[bad]})

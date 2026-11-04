@@ -47,8 +47,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "sha256": "46868a7e67e1935a645385573f5d51a2a7c76365bab9fac92c4f21412843dbee",
-      "bytes": 9053
+      "sha256": "25cfb5f8f226e7ab942006c390f6321cec0b76f9079390a310194eb6ae94a477",
+      "bytes": 9447
     },
     {
       "path": "docs/CHANGE_VIEW.md",
@@ -97,8 +97,8 @@
     },
     {
       "path": "docs/PROCESS_MY_DAY.md",
-      "sha256": "1e51da211c8cb3af45943af4cdc9d514cffc901184d2621fbe70ddbd87772e24",
-      "bytes": 5189
+      "sha256": "ecda6eb6fed6f12e3ef475fdcf85daa10ecbad87caef932b3934a1c6c3fd7b34",
+      "bytes": 6064
     },
     {
       "path": "docs/REVIEW_ORGANIZATION.md",
@@ -242,8 +242,8 @@
     },
     {
       "path": "lima_next/process_day.py",
-      "sha256": "4e63bcd482f33f6a3bf6f4fcfded7120d8efb1fdcd11559b91399890b9eaa775",
-      "bytes": 24392
+      "sha256": "28f852be6ef98cbc8ad1a4484da4ed2f42fe0d397e1e5c77cd7f235b6fbb528c",
+      "bytes": 28523
     },
     {
       "path": "lima_next/recordings.py",
@@ -257,8 +257,8 @@
     },
     {
       "path": "lima_next/server.py",
-      "sha256": "a420d251d9ada988e91448403f24cf4af6d2a6169b5c54fe2e6d6a45ae70befd",
-      "bytes": 26106
+      "sha256": "02271463d844a25beaef5354e157fce6eb7b38bd642fbf945a1943fa6ea0ab18",
+      "bytes": 26300
     },
     {
       "path": "lima_next/store.py",
@@ -277,8 +277,8 @@
     },
     {
       "path": "lima_next/web/app.js",
-      "sha256": "1afca2b9106e61f6ca11fd1978f7faac5e8261b78176962aeaac2591794b3bb0",
-      "bytes": 77163
+      "sha256": "feca45690ce99a23c96469945873fddeb5d23148da94f74b9296c26c08a3abe9",
+      "bytes": 78253
     },
     {
       "path": "lima_next/web/communications.js",
@@ -287,8 +287,8 @@
     },
     {
       "path": "lima_next/web/day.js",
-      "sha256": "c0976bc8ba1fe26ed851711e3e4d471efaf364dcc05a90645616d19c8ad9ceac",
-      "bytes": 32209
+      "sha256": "5d538fb9a910e9cea6fc1f0a1d3bba568efc56dd3ab2facb9ad20f27d71818c0",
+      "bytes": 32252
     },
     {
       "path": "lima_next/web/file-import.js",
@@ -427,8 +427,8 @@
     },
     {
       "path": "tests_next/test_process_day.py",
-      "sha256": "5dea173cd31583285e66bdba6e5c4dcc50ea3299de8d7db17f12dc96cafea8f0",
-      "bytes": 9675
+      "sha256": "d8f725343816c0f0fe7b5b31044387d3368d51e378f13d9a4957ce5f322e6175",
+      "bytes": 10990
     },
     {
       "path": "tests_next/test_recordings.py",

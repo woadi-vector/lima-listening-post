@@ -52,3 +52,6 @@ Daily class lesson review: 236 tests pass. Atomic class-only learning approval c
 
 
 November 3 field polish: 239 tests pass. Deterministic all-source daily coverage, short evidence labels, preserved identity links, source-self-exclusion in reconciliation and overlap-only lesson deduplication added. See docs/FIELD_RESULTS_2026-11-03.md for the field checkpoint and classification adaptation boundaries.
+
+
+November 4: 240 tests pass. User-selected interpretations can produce unapproved calendar reminder candidates with deterministic original context, empty scheduling fields and unchanged interpretation reviews. The review badge counts a class lesson once. Three real pending items were drafted with Muse and manually checked/corrected before handoff; no calendar events or emails were sent.

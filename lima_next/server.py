@@ -332,6 +332,8 @@ class Handler(BaseHTTPRequestHandler):
                 result = {"ok": True}
             elif self.path == "/api/file-subject":
                 result = subject_folders.file_claim(ws, data["project_id"], data["claim_id"], data["name"])
+            elif self.path == "/api/selected-reminder":
+                result = process_day.propose_selected_reminder(ws, data.get("claim_id"), cloud_consent=data.get("cloud_consent",False))
             elif self.path == "/api/keep-class-lesson":
                 result = review_organization.keep_lesson(ws, data.get("ids"), data.get("title"))
             elif self.path == "/api/keep-learning-group":

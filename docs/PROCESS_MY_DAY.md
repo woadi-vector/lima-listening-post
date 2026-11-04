@@ -38,3 +38,10 @@ Live Meta synthetic day preparation has been exercised, including partial output
 Today now offers **Prepare → One meeting now**. Choose one latest Bee transcript or a source linked to the selected project. Lima freezes just that version and uses the same durable interpretation, reconciliation and follow-up preparation worker. Review the displayed source and grant Meta processing consent before starting. The Sources screen also has a **Process this meeting** shortcut.
 
 A meeting can be processed before the end of the day, once Bee has delivered its transcript. Existing per-source caches and versioned outgoing receipts are reused; processing never automatically resends an email or calendar action. Changes to source versions or reviewed project context require fresh preparation and approval. One job runs at a time; a long day can be stopped after its current model section if a meeting needs priority.
+
+
+## Selected reviews can become reminder drafts
+
+A user can select a non-reference interpretation and explicitly allow Muse to prepare a reminder from that item and its surrounding passage. This creates an unapproved personal-calendar candidate without accepting the interpretation. Original context is attached deterministically so a short phrase such as "do that" retains its preceding subject. Date, time, duration and calendar remain for the user to supply. These candidates are added to the most recent completed day containing that project/source. A lecturer's offer to compile submissions does not become the user's task to compile them. Recurring series are not supported.
+
+The review badge counts an eligible class lesson as one review decision; supporting evidence-point counts remain visible separately. Internal evidence and review history are preserved.

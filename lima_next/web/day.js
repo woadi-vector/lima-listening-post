@@ -77,7 +77,7 @@ async function loadDayReview(identity){
  const summary=el('div',undefined,'panel');summary.append(el('h2',job.scope==='meeting'?'Your meeting follow-ups':'Your daily breakdown'),el('p',`${job.sources.length} source${job.sources.length===1?'':'s'} · ${job.report_ids.length} comparison report${job.report_ids.length===1?'':'s'} · ${job.draft_ids.length} proposed note${job.draft_ids.length===1?'':'s'} · ${job.action_ids.length} follow-up proposals`));
  const projectState=state.projects.find(p=>p.id===job.project_id);const sourceRecords=new Set(Object.values(job.records));
  const pending=(projectState?.history||[]).filter(c=>sourceRecords.has(c.record_id)&&c.review==='pending');
- summary.append(el('p',`${pending.length} interpretations await your review. They have not become confirmed work.`));
+ summary.append(el('p',`${reviewUnits(pending)} review decisions remain (${pending.length} supporting interpretations). They have not become confirmed work.`));
  if(pending.length){const pendingDetails=el('details');pendingDetails.append(el('summary','Interpretations to review'));
   for(const source of job.sources){const record=job.records[source.id];const count=pending.filter(c=>c.record_id===record).length;if(!count)continue;const button=el('button',`${source.name} · ${count} to review`,'record-button');button.onclick=()=>{reviewFilter=job.project_id+':'+record;render();page('review');};pendingDetails.append(button);}summary.append(pendingDetails);}
  const sourceDetails=el('details');sourceDetails.append(el('summary','Review conversations and work interpretations'));
